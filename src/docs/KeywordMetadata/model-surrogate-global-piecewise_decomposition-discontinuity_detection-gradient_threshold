@@ -1,0 +1,14 @@
+Blurb:: 
+Gradient Threshold Parameter of the Optional Discontinuity Detection Capability for the Piecewise Decomposition Option of Global Surrogates
+
+Description:: 
+The piecewise decomposition option for global surrogates is used to locally approximate a function at some point using a few sample points from its neighborhood.
+
+The domain decomposition algorithm supports an optional discontinuity detection capability where seeds across a user-input discontinuity threshold can not be considered neighbors, splitting the domain into patches that trap discontinuities between their edges. This capability can be specified using a gradient threshold value.
+
+Topics::
+Examples::
+Theory::
+ 
+Faq::
+See_Also::

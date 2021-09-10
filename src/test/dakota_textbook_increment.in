@@ -1,0 +1,37 @@
+#@ *: Label=SmokeTest
+#@ s0: Restart=write
+#@ s1: Restart=read DependsOn=s0
+
+# DAKOTA INPUT FILE - dakota_textbook_lhs.in
+
+environment,
+        tabular_graphics_data
+
+method,
+        sampling,
+	  samples = 10 seed = 1833 			       	#s0
+#	  samples = 20 seed = 1833 			 	#s1
+          sample_type lhs                                       #s0
+#	  sample_type incremental_lhs previous_samples = 10	#s1
+
+variables,
+	normal_uncertain = 2
+	  means             =  5, 10
+	  std_deviations    =   1,   2
+	  descriptors       =  'TF1n'  'TF2n'
+        uniform_uncertain = 2
+          lower_bounds = 0 0
+          upper_bounds = 10 10
+          descriptors       =  'TF1u' 'TF2u'
+        exponential_uncertain = 1
+          betas = 0.5
+          descriptors       = 'TF1e'
+
+interface,
+	system asynch evaluation_concurrency = 5
+	  analysis_driver = 'text_book'
+
+responses,
+	response_functions = 1
+	no_gradients
+	no_hessians

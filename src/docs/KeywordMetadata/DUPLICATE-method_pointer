@@ -1,0 +1,15 @@
+Blurb::
+Pointer to sub-method to apply to surrogate
+Description::
+The \c method_pointer keyword is used to specify a pointer to an optimization 
+or least-squares sub-method to apply to the surrogate model. 
+
+Any \c model_pointer identified in the sub-method specification is ignored. 
+Instead, the parent method is responsible for selecting a surrogate model
+using its \c model_pointer.
+
+Topics::	block_pointer
+Examples::
+Theory::
+Faq::
+See_Also::	

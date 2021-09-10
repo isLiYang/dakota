@@ -1,0 +1,21 @@
+Performing C SOURCE FILE Test C_SUPPORTS_DOLLAR succeeded with the following output:
+Change Dir: /home/liyang/software/issm/trunk/externalpackages/dakota/build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23c85/fast && /usr/bin/make -f CMakeFiles/cmTC_23c85.dir/build.make CMakeFiles/cmTC_23c85.dir/build
+make[1]: Entering directory '/home/liyang/software/issm/trunk/externalpackages/dakota/build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp'
+/usr/bin/cmake: /home/liyang/software/issm/trunk/externalpackages/curl/install/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Building C object CMakeFiles/cmTC_23c85.dir/src.c.o
+/home/liyang/software/issm/trunk/externalpackages/petsc/install/bin/mpicc   -DC_SUPPORTS_DOLLAR   -o CMakeFiles/cmTC_23c85.dir/src.c.o   -c /home/liyang/software/issm/trunk/externalpackages/dakota/build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp/src.c
+/usr/bin/cmake: /home/liyang/software/issm/trunk/externalpackages/curl/install/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+Linking C executable cmTC_23c85
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23c85.dir/link.txt --verbose=1
+/usr/bin/cmake: /home/liyang/software/issm/trunk/externalpackages/curl/install/lib/libcurl.so.4: no version information available (required by /usr/bin/cmake)
+/home/liyang/software/issm/trunk/externalpackages/petsc/install/bin/mpicc  -DC_SUPPORTS_DOLLAR    CMakeFiles/cmTC_23c85.dir/src.c.o  -o cmTC_23c85 
+make[1]: Leaving directory '/home/liyang/software/issm/trunk/externalpackages/dakota/build/CMakeFiles/FortranCInterface/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+extern int dollar$(void);
+int main() { return 0; }
+
